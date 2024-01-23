@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e6f7ff; /* Light bluish background color */
         }
 
         header {
@@ -27,6 +27,13 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
         h2 {
             color: #333;
         }
@@ -35,11 +42,18 @@
             color: #666;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            margin: 20px 0;
+        .projects-section {
+            margin-top: 50px;
+        }
+
+        .project-box {
+            width: 48%;
+            display: inline-block;
+            margin-right: 2%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         footer {
@@ -66,14 +80,18 @@
         <p>Write a brief introduction about yourself and your skills.</p>
     </section>
 
-    <section>
+    <section class="projects-section">
         <h2>Projects</h2>
-        <p>Describe some of your key projects. Include links if available.</p>
-    </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Provide ways for visitors to get in touch with you. Email, LinkedIn, GitHub, etc.</p>
+        <div class="project-box">
+            <h3>Data Analytics</h3>
+            <p>Description of your data analytics projects.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Data Science</h3>
+            <p>Description of your data science projects.</p>
+        </div>
     </section>
 
     <footer>
