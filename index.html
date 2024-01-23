@@ -12,13 +12,6 @@
             background-color: #e6f7ff; /* Light bluish background color */
         }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
-
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -56,6 +49,12 @@
             margin-bottom: 20px;
         }
 
+        .projects-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -69,12 +68,6 @@
 </head>
 <body>
 
-    <header>
-        <img src="your-image.jpg" alt="Your Name" style="width: 150px; height: 150px;">
-        <h1>Your Name</h1>
-        <p>Web Developer</p>
-    </header>
-
     <section>
         <h2>About Me</h2>
         <p>Write a brief introduction about yourself and your skills.</p>
@@ -83,14 +76,16 @@
     <section class="projects-section">
         <h2>Projects</h2>
 
-        <div class="project-box">
-            <h3>Data Analytics</h3>
-            <p>Description of your data analytics projects.</p>
-        </div>
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>Data Analytics</h3>
+                <p>Description of your data analytics projects.</p>
+            </div>
 
-        <div class="project-box">
-            <h3>Data Science</h3>
-            <p>Description of your data science projects.</p>
+            <div class="project-box">
+                <h3>Data Science</h3>
+                <p>Description of your data science projects.</p>
+            </div>
         </div>
     </section>
 
@@ -100,3 +95,4 @@
 
 </body>
 </html>
+
