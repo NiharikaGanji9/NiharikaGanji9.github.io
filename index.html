@@ -21,6 +21,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap; /* Wrap elements to the next line if there's not enough space */
         }
 
         img {
@@ -43,7 +44,8 @@
         }
 
         .projects-section {
-            margin-top: 50px;
+            margin-top: 20px; /* Adjusted margin */
+            width: 100%; /* Full width for smaller screens */
         }
 
         .project-buttons {
@@ -79,7 +81,7 @@
             <h2>About Me</h2>
             <p>Write a brief introduction about yourself and your skills.</p>
         </div>
-        <img src="my image.jpg" alt="Your Name" style="width: 150px; height: 150px;">
+        <img src="my_photo.jpg" alt="Your Name" style="width: 150px; height: 150px;">
     </section>
 
     <section class="projects-section">
