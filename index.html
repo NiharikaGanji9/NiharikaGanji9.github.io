@@ -3,106 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Your Portfolio</title>	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
-            font-family: 'Merryweather', serif; /* Merryweather font */
+            font-family: Garamond, serif;
             margin: 0;
             padding: 0;
-            background-color: #FFFFE0 ; /* #e6f7ff Light bluish background color */
+            background-color: #FFFFE0 ; 
             color: #000; /* Set font color to black */
         }
         
         header {
-            font-family: 'Merryweather', serif; /* Merryweather font */
-            background-color: #000; /* Black background for the header */
-            color: white;
-            padding: 10px;
-            text-align: left;
+            font-family: Garamond, serif; /* Merryweather font */
+            background-color: #f2786f; /* Black background for the header */
+            display:flex;
+            justify-content: flex-end; 
+        }
+	
+        .linkedin-icon {
+          fill: #0077B5; /* Adjust the color of the icon */
+          margin-left: auto; 
+          margin-top:18px;
+          margin-right: 50px;/* Optional: Add margin for spacing */
         }
 
-        section {
-            padding: 20px;
-            background-color: #FFFFE0;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; /* Wrap elements to the next line if there's not enough space */
+        header p {
+          margin-right: auto;
+          margin-left: 150px;
+          font-size: 24px;
+          margin-top:20px;
+          color:#333;
+        }
+
+        h1{
+          font-family: Garamond, serif;
+          text-align: center;
+          font-size: 40px;
+        }
+        
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        th, td {
+          border: 2px solid #ddd;
+          padding: 12px 20px;
+          font-size: 25px;
+          text-align: center;
+        }
+
+        th {
+          background-color: #f2f2f2;
+          font-size: 30px;
+          font-weight: 600;
+        }
+        section{
+          margin-top: 100px;
+          margin-right: 150px;
+          margin-left: 150px;
+          margin-bottom: 100px;
+          background-color: #FFFFE0;
+          /*justify-content: space-between;*/
+        }
+
+        .all-flex{
+          display: flex;
         }
 
         .about-me {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .about-me h2 {
-            color: #333;
+          flex: 1;
+          background-color: #FFFFE0;
+          
         }
 
         .about-me p {
-            color: #000;
+          font-weight: 540; 
+	        font-size: 25px; 
+          color: #000;
+          flex: 1;
+          flex-wrap: wrap; /* Wrap elements to the next line if there's not enough space*/
+	        text-align: justify;
         }
 
-        .projects-section {
-            margin-top: 20px; /* Adjusted margin */
-            width: 100%; /* Full width for smaller screens */
+        .photo{
+          flex: 1;
+          background-color: #FFFFE0;
         }
 
-        .project-buttons {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        .photo img {
+          border-radius: 20px;
+          margin-left:100px;
+        }
+
+        .projects-section{
+          display:flex;
         }
 
         .project-button {
-            background-color: white;
-            color: #333;
-            padding: 10px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right:10px;
+          background-color: #FFFFE0;
+    	    flex: 1;
+	        font-family: Garamond, serif;
+   	      font-weight: 700;
+          color: #333;
+	        font-size: 25px;
+    	    padding: 26px 13px;
+          border: 5px solid  #f2786f; ;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-left: 50px;
+	        margin-right: 50px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+        .project-button:hover {
+          background-color: #f2786f; /* Change the background color on hover */
+    	  }
+	
     </style>
 </head>
 <body>
     <header>
-        <div>Resume</div>
-        <p>Resume</p>
+      <p><i class="fa fa-file"></i><b>Resume</b></p>
+      <div class ="linkedin-icon">
+      <a href="https://www.linkedin.com/in/niharikaganji/" target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+      </a>
+    </div>
     </header>
+    <section class ="all-flex">
+      <div class="about-me">
+        <p>Hi!! I am <b>Niharika Ganji,</b></p>
+        <p>As I progressed through the constructs of traditional academic learning, I witnessed the impact of <b>science</b> on everyday life. This sparked my fascination with the systematic study of things. </p>
+        <p>My passion towards science steered me towards a career in <b>Data Science</b>. I love scrutinizing vast amounts of data to evaluate even the simplest of hypotheses.</p>
+        <p>Ever wondered whether data scientists are actually engineers or scientists? I do, often🤔</p>
+      </div>
+      <div class = "photo">
+        <img src = "nyc.jpg" style="width:400px; height: 500px;">
+      </div>
+    </section>
+	
     <section>
-        <div class="about-me">
-            <p>Hi. I am Niharika!! Reach out to me at nganji@iu.edu</p>
-            <p>Thank you for taking the time to visit my profile.</p>
-            <p>As I progressed through the constructs of traditional academic learning, I witnessed the impact of science on everyday life. This sparked my fascination with the systematic study of things. </p>
-            <p>My passion towards science steered me towards a career in Data Science. I love towards scrutinizing vast amounts of data to evaluate even the simplest of hypotheses.</p>
-            <p>📍My technical skills include SQL, Tableau, R, Python (Numpy, Pandas, Keras, SKLearn, Matplotlib, Flask), Advanced Excel (Pivot Tables, StatTools)</p>
-            <p>📍My foundation in Data Science includes key concepts : Statistical Analysis, Data Extraction and Quality, Data Cleaning and Preprocessing, Exploratory Data Analysis and Data Visualization.</p>
-            <p>📍Previously, I have interned as Data Analyst at Kaikili Inc., where I analyzed, visualized and created dashboards presenting customer service usage information, increasing demand by 10% through leveraging targeted marketing efforts and reduced manual analysis time by 70%.</p>
-            <p>📍I have also worked as a Research Assistant in Data Science under Professor Nagendra Kumar at IIT Indore, collaborating with multidisciplinary teams to collect, analyze, and interpret large datasets and developing predictive models with an accuracy of up to 96%.</p>
-            <p></p>
-            <p>Ever wondered whether data scientists are actually engineers or scientists? I do, often🤔</p>
-        </div>
-        <img src="nyc.jpg" alt="Your Name" style="width: 250px; height: 350px;">
+	    <h1><b>Technical Skills</b></h2>
+      <table>
+        <tr>
+          <th>Programming Languages</th>
+          <th>Visualization Tools</th>
+          <th>Cloud Technologies</th>
+          <th>Machine Learning</th>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>Tableau</td>
+          <td>AWS</td>
+          <td>Pandas</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Power BI</td>
+          <td>Google Cloud</td>
+          <td>scikit-learn</td>
+        </tr>
+        <tr>
+          <td>R</td>
+          <td>BigQuery</td>
+          <td></td>
+          <td>NumPy</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h1><b>Projects</b></h1>
     </section>
 
     <section class="projects-section">
-        <h2>Projects</h2>
-        <div class="project-buttons">
-            <button class="project-button">Data Analytics</button>
-            <button class="project-button">Data Science</button>
-        </div>
+      <button class="project-button">Data Analytics</button>
+      <button class="project-button">Data Science</button>
     </section>
 
 </body>
 </html>
-
