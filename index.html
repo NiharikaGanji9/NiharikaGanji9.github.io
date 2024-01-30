@@ -103,8 +103,8 @@
 
         .project-button {
           background-color: #FFFFE0;
-    	    flex: 1;
 	        font-family: Garamond, serif;
+          flex: 1; 
    	      font-weight: 700;
           color: #333;
 	        font-size: 25px;
@@ -119,6 +119,11 @@
         .project-button:hover {
           background-color: #f2786f; /* Change the background color on hover */
     	  }
+
+        .project-link {
+            text-decoration: none;
+            flex: 1; 
+        }
 	
     </style>
 </head>
@@ -180,8 +185,17 @@
     </section>
 
     <section class="projects-section">
-      <button class="project-button">Data Analytics</button>
-      <button class="project-button">Data Science</button>
+      <div class = "project-link">
+        <a href="C:\Users\91703\OneDrive\Documents\Portfolio\Car Sales\carsales.html">
+          <button class="project-button">Data Analytics</button>
+        </a>
+      </div>
+
+      <div class = "project-link">
+        <a  href="Car Sales\carsales.html">
+          <button class="project-button">Data Science</button>
+        </a>
+      </div>
     </section>
 
 </body>
