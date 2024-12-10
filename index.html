@@ -1,206 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NEGGBGZWTD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <!-- Makes the page responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>	
+  <!-- links a stylesheet for the Font Awesome icon library to a web page -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  gtag('config', 'G-NEGGBGZWTD');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>	
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: Garamond, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFE0 ; 
-            color: #000; 
-        }
-        
-        header {
-            font-family: Garamond, serif; 
-            background-color: #f2786f; 
-            display:flex;
-            justify-content: flex-end; 
-        }
-	
-        .linkedin-icon {
-          fill: #0077B5; 
-          margin-left: auto; 
-          margin-top:18px;
-          margin-right: 50px;
-        }
+  <!-- Google tag (gtag.js) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEGGBGZWTD"></script>
 
-        .header-left {
-          margin-right: auto;
-          margin-left: 150px;
-	  margin-top:20px;
-          font-size: 24px;
-          color:#333;
-        }
+  <script> -->
+    <!-- window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NEGGBGZWTD'); -->
+  <!-- </script> -->
 
-        h1{
-          font-family: Garamond, serif;
-          text-align: center;
-          font-size: 40px;
-        }
-        
-        table {
-          width: 100%;
-          border-collapse: collapse;
-        }
+  <style>
+    header {
+        font-family: Garamond, serif; 
+        background-color: #f2786f; 
+        display:flex;
+        justify-content: flex-end; 
+    }
 
-        th, td {
-          border: 2px solid #ddd;
-          padding: 12px 20px;
-          font-size: 25px;
-          text-align: center;
-        }
+    body {
+        font-family: Garamond, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #FFFFE0 ; 
+        color: #000; 
+    }
+    
+    .linkedin-icon {
+      fill: #0077B5; 
+      /* margin-left: auto;  */
+      margin-top:18px;
+      margin-right: 50px;
+    }
 
-        th {
-          background-color: #f2f2f2;
-          font-size: 30px;
-          font-weight: 600;
-        }
-        section{
-          margin-top: 100px;
-          margin-right: 150px;
-          margin-left: 150px;
-          margin-bottom: 100px;
-          background-color: #FFFFE0;
-          /*justify-content: space-between;*/
-        }
+    .resume-icon {
+      margin-left: 150px;
+      margin-right: auto;
+      margin-top:20px;
+      font-size: 24px;
+      color:#333;
+    }
 
-        .all-flex{
-          display: flex;
-        }
+    h1{
+      font-family: Garamond, serif;
+      text-align: center;
+      font-size: 40px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-        .about-me {
-          flex: 1;
-          background-color: #FFFFE0;
-          
-        }
+    th, td {
+      border: 2px solid #ddd;
+      padding: 12px 20px;
+      font-size: 25px;
+      text-align: center;
+    }
 
-        .about-me p {
-          font-weight: 540; 
-	  font-size: 25px; 
-          color: #000;
-          flex: 1;
-          flex-wrap: wrap; /* Wrap elements to the next line if there's not enough space*/
-	        text-align: justify;
-        }
+    th {
+      background-color: #f2f2f2;
+      font-size: 30px;
+      font-weight: 600;
+    }
+    section{
+      margin-top: 100px;
+      margin-right: 150px;
+      margin-left: 150px;
+      margin-bottom: 100px;
+      background-color: #FFFFE0;
+      /*justify-content: space-between;*/
+    }
 
-        .photo{
-         # flex: 1;
-          background-color: #FFFFE0;
-        }
+    .all-flex{
+      display: flex;
+    }
 
-        .photo img {
-          border-radius: 20px;
-          margin-left:100px;
-        }
+    .about-me {
+      flex: 1;
+      background-color: #FFFFE0;
+      
+    }
 
-        .projects-section{
-          display:flex;
-        }
+    .about-me p {
+      font-weight: 540; 
+      font-size: 25px; 
+      color: #000;
+      flex: 1;
+      flex-wrap: wrap; /* Wrap elements to the next line if there's not enough space*/
+      text-align: justify;
+    }
 
-        .project-button {
-          background-color: #FFFFE0;
-	        font-family: Garamond, serif;
-          flex: 1; 
-   	      font-weight: 700;
-          color: #333;
-	        font-size: 25px;
-    	    padding: 26px 13px;
-          border: 5px solid  #f2786f; ;
-          border-radius: 10px;
-          cursor: pointer;
-          margin-left: 50px;
-	        margin-right: 50px;
-        }
+    .photo{
+      /* flex: 1; */
+      background-color: #FFFFE0;
+    }
 
-        .project-button:hover {
-          background-color: #f2786f; /* Change the background color on hover */
-    	  }
+    .photo img {
+      border-radius: 20px;
+      margin-left:100px;
+    }
 
-        .project-link {
-            text-decoration: none;
-            flex: 1; 
-        }
-	
-    </style>
+    .projects-section{
+      display:flex;
+    }
+
+    .project-button {
+      background-color: #FFFFE0;
+      font-family: Garamond, serif;
+      flex: 1; 
+      font-weight: 700;
+      color: #333;
+      font-size: 25px;
+      padding: 26px 13px;
+      border: 5px solid  #f2786f; ;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .project-button:hover {
+      background-color: #f2786f; /* Change the background color on hover */
+    }
+
+    .project-link {
+      text-decoration: none;
+      flex: 1; 
+    }
+
+  </style>
+
 </head>
+
 <body>
-    <header>
-      <a class ="header-left" href="https://docs.google.com/document/d/1l8lRDBg_lcbmh5vtXeLQG3XQ5BU7jY5s/edit?usp=sharing&ouid=115246201574592665630&rtpof=true&sd=true" target="_blank">
-        <i class="fa fa-file"></i><b>Resume</b></p>
-      </a>
-      <div class ="linkedin-icon">
-      <a href="https://www.linkedin.com/in/niharikaganji/" target="_blank">
-        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-      </a>
-    </div>
-    </header>
-    <section class ="all-flex">
-      <div class="about-me">
-        <p>Hi!! I am <b>Niharika Ganji,</b></p>
-        <p>As I progressed through the constructs of traditional academic learning, I witnessed the impact of <b>science</b> on everyday life. This sparked my fascination with the systematic study of things. </p>
-        <p>My passion towards science steered me towards a career in <b>Data Science</b>. I love scrutinizing vast amounts of data to evaluate even the simplest of hypotheses.</p>
-        <p>Ever wondered whether data scientists are actually engineers or scientists? I do, often🤔</p>
-      </div>
-      <div class = "photo">
-        <img src = "Linkedin Banner.JPG" style="width:420px; height: 560px;">
-      </div>
-    </section>
-	
-    <section>
-	<h1><b>Technical Skills</b></h2>
-      <table>
-        <tr>
-          <th>Programming Languages</th>
-          <th>Visualization Tools</th>
-          <th>Cloud Technologies</th>
-          <th>Machine Learning</th>
-        </tr>
-        <tr>
-          <td>SQL</td>
-          <td>Excel</td>
-          <td>AWS</td>
-          <td>Pandas</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>Power BI</td>
-          <td>Google Cloud</td>
-          <td>NumPy</td>
-        </tr>
-        <tr>
-          <td>R</td>
-          <td>Tableau</td>
-          <td></td>
-          <td>Scikit-learn</td>
-        </tr>
-      </table>
-    </section>
-    <section>
-      <h1><b>Projects</b></h1>
-    </section>
 
-    <section class="projects-section">
-      <div class = "project-link">
-          <button class="project-button">Data Analytics</button>
-      </div>
+<header>
+  <!-- blank opens resume in new page and fa refers to font awesome library-->
+  <div class ="resume-icon">
+  <a href="https://docs.google.com/document/d/1l8lRDBg_lcbmh5vtXeLQG3XQ5BU7jY5s/edit?usp=sharing&ouid=115246201574592665630&rtpof=true&sd=true" target="_blank">
+    <i class="fa fa-file"></i><b>Resume</b>
+  </a>
+  </div>
 
-      <div class = "project-link">
-          <button class="project-button">Data Science</button>
-      </div>
-    </section>
+  <div class ="linkedin-icon">
+  <a href="https://www.linkedin.com/in/niharikaganji/" target="_blank">
+    <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+  </a>
+  </div>
+</header>
+
+<section class ="all-flex">
+  <div class="about-me">
+    <p>Hi!! I am <b>Niharika Ganji,</b></p>
+    <p>As I progressed through the constructs of traditional academic learning, I witnessed the impact of <b>science</b> on everyday life. This sparked my fascination with the systematic study of things. </p>
+    <p>My passion towards science steered me towards a career in <b>Data Science</b>. I love scrutinizing vast amounts of data to evaluate even the simplest of hypotheses.</p>
+    <p>Ever wondered whether data scientists are actually engineers or scientists? I do, often🤔</p>
+  </div>
+  <div class = "photo">
+    <img src = "Linkedin Banner.JPG" style="width:420px; height: 560px;">
+  </div>
+</section>
+
+<section>
+<h1><b>Technical Skills</b></h2>
+  <table>
+    <tr>
+      <th>Programming Languages</th>
+      <th>Visualization Tools</th>
+      <th>Cloud Technologies</th>
+      <th>Machine Learning</th>
+    </tr>
+    <tr>
+      <td>SQL</td>
+      <td>Excel</td>
+      <td>AWS</td>
+      <td>Pandas</td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>Power BI</td>
+      <td>Google Cloud</td>
+      <td>NumPy</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Tableau</td>
+      <td></td>
+      <td>Scikit-learn</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h1><b>Projects</b></h1>
+</section>
+
+<section class="projects-section">
+  <div class = "project-link">
+      <button class="project-button">Data Analytics</button>
+  </div>
+
+  <div class = "project-link">
+      <button class="project-button">Data Science</button>
+  </div>
+</section>
 
 </body>
 </html>
