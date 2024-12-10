@@ -20,34 +20,41 @@
   <!-- </script> -->
 
   <style>
-    header {
-        font-family: Garamond, serif; 
-        background-color: #f2786f; 
-        display:flex;
-        justify-content: flex-end; 
+    body {
+      font-family: Garamond, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFE0 ; 
+      color: #000; 
     }
 
-    body {
-        font-family: Garamond, serif;
-        margin: 0;
-        padding: 0;
-        background-color: #FFFFE0 ; 
-        color: #000; 
+    header {
+      font-family: Garamond, Serif; 
+      background-color: #f2786f; 
+    }
+
+    .header-flex {
+      display:flex;
+      justify-content: space-between;
+      padding: 0 100px;
     }
     
-    .linkedin-icon {
-      fill: #0077B5; 
-      /* margin-left: auto;  */
-      margin-top:18px;
-      margin-right: 50px;
+    .resume-icon { 
+      margin-top:20px;
+      margin-bottom:15px;
+      font-size: 24px;
+      /* border: 1px solid #000; */
     }
 
-    .resume-icon {
-      margin-left: 150px;
-      margin-right: auto;
+    .resume-icon a{
+      color: #333; 
+    }
+
+    .linkedin-icon {
+      fill: #0077B5;
+      /* border: 1px solid #000; */
       margin-top:20px;
-      font-size: 24px;
-      color:#333;
+      margin-bottom:15px;
     }
 
     h1{
@@ -144,8 +151,8 @@
 </head>
 
 <body>
-
 <header>
+  <div class ='header-flex'>
   <!-- blank opens resume in new page and fa refers to font awesome library-->
   <div class ="resume-icon">
   <a href="https://docs.google.com/document/d/1l8lRDBg_lcbmh5vtXeLQG3XQ5BU7jY5s/edit?usp=sharing&ouid=115246201574592665630&rtpof=true&sd=true" target="_blank">
@@ -158,17 +165,19 @@
     <i class="fa fa-linkedin-square" style="font-size:36px"></i>
   </a>
   </div>
+</div>
 </header>
 
-<section class ="all-flex">
+<section class ="intro-flex">
   <div class="about-me">
     <p>Hi!! I am <b>Niharika Ganji,</b></p>
     <p>As I progressed through the constructs of traditional academic learning, I witnessed the impact of <b>science</b> on everyday life. This sparked my fascination with the systematic study of things. </p>
     <p>My passion towards science steered me towards a career in <b>Data Science</b>. I love scrutinizing vast amounts of data to evaluate even the simplest of hypotheses.</p>
     <p>Ever wondered whether data scientists are actually engineers or scientists? I do, often🤔</p>
   </div>
+
   <div class = "photo">
-    <img src = "Linkedin Banner.JPG" style="width:420px; height: 560px;">
+    <img src = "Linkedin Banner.JPG" style="width:450px; height: 560px;">
   </div>
 </section>
 
