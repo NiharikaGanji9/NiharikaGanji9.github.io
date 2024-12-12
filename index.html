@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  
   <!-- Makes the page responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Portfolio</title>	
@@ -11,7 +12,6 @@
 
   <!-- Google tag (gtag.js) -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NEGGBGZWTD"></script>
-
   <script> -->
     <!-- window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -38,6 +38,7 @@
       /* This will align the content to the corners with the mentioned padding */
       justify-content: space-between;
       padding: 0 100px;
+      border: 2px solid #FFFFE0; 
     }
     
     .resume-icon { 
@@ -45,6 +46,7 @@
       margin-top:20px;
       margin-bottom:15px;
       font-size: 24px;
+      /* border: 2px solid #FFFFE0;  */
     }
 
     .resume-icon a{
@@ -52,11 +54,24 @@
       color: #333; 
     }
 
-    .linkedin-icon {
+    .icons {
       /* We want space over the elements - hence the margin */
+      display: flex; /* Use flexbox for horizontal alignment */
+      justify-content: center; /* Center the icons horizontally */
+      align-items: center;
+
       margin-top:20px;
       margin-bottom:15px;
+      /* border: 2px solid #FFFFE0;  */
+    }
+
+    .linkedin-icon{
       fill: #0077B5;
+      margin-right: 20px; 
+    }
+
+    .github-icon a{
+      color: #333; 
     }
 
     section{
@@ -142,6 +157,10 @@
     button:hover {
       background-color: #f2786f;
     }
+
+    .icon {
+      margin-right: 20px; /* Adjust the spacing as needed */
+    }
   </style>
 </head>
 
@@ -155,10 +174,18 @@
   </a>
   </div>
 
-  <div class ="linkedin-icon">
-  <a href="https://www.linkedin.com/in/niharikaganji/" target="_blank">
-    <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-  </a>
+  <div class ="icons">
+    <div class = "linkedin-icon">
+      <a href="https://www.linkedin.com/in/niharikaganji/" target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:40px"></i>
+      </a>
+    </div>
+    <div class = 'github-icon'>
+      <a href="https://github.com/niharikaganji9" target="_blank">
+        <i class="fa fa-github fa-2x" style="font-size:40px"></i>
+      </a>
+    </div>
+
   </div>
 </div>
 </header>
@@ -210,7 +237,7 @@
   <h1><b>Projects</b></h1></p>
   <div class = "project-buttons">
     <div class = "data">
-      <a href="carsales.html">
+      <a href="C:\Users\91703\OneDrive\Documents\Chp 03 Portfolio\CarSales\carsales.html">
         <button>Data Analytics</button>
       </a>
     </div>
